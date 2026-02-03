@@ -25,7 +25,7 @@ SOFTWARE.
 #include <stdio.h>
 #include <math.h>
 
-#include "vector_funcs.h"
+#include "park_clarke_trsfm.h"
 
 
 /******************  CONSTANT DEFINTIONS  *******************/
