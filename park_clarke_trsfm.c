@@ -42,8 +42,8 @@ SOFTWARE.
  * This function normalizes an input vector to have a magnitude of 1.
  *
  * @param	Vector is the pointer to the first element of the vector
-            (type double) to be normalized.  When the function is complete, 
-            the same vector will contain the normalized values.
+ *          (type double) to be normalized.  When the function is complete, 
+ *          the same vector will contain the normalized values.
  * @param	n is the size of the vector.
  * 
  * @return	0
