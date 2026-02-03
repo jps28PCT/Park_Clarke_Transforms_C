@@ -54,7 +54,7 @@ int vector_normalize(double *Vector, int n){
     int i;
     
     for (i=0; i<n; i++){
-        squareSum = squareSum + pow(Vector[i], 2);
+        squareSum = squareSum + Vector[i] * Vector[i];
     }
     
     magnitude = sqrt(squareSum);
