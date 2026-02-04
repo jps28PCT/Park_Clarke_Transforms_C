@@ -4,7 +4,7 @@ C implementation of the Park and Clark transforms, as well as their inverses.</b
 Requires `<math.h>` for `sin()` and `cos()`.</br> 
 </br> 
 The Park transform converts three-phase vectors in the time domain to a stationary two-phase vector.</br>
-The Clarke transform rotates the two-phase vector into a consistent reference frame.</br>
+The Clarke transform rotates the two-phase stationary vector into a rotating reference frame.</br>
 </br>
 I developed this as part of a field-oriented control BLDC motor project.  
 
@@ -44,7 +44,7 @@ I developed this as part of a field-oriented control BLDC motor project.
 
 
   ## int park_trsfm(double *InputVector, double theta, double *OutputVector)
-  This function performs the Park transform to rotate a quadrature 2-phase vector to the standard reference frame.
+  This function performs the Park transform to rotate a quadrature 2-phase stationary vector to a rotated reference frame.
 
   ### Inputs:
   - `InputVector` is the pointer to the first element of the 2-element double vector to be transformed.
@@ -56,7 +56,7 @@ I developed this as part of a field-oriented control BLDC motor project.
 
 
   ## int inv_park_trsfm(double *InputVector, double theta, double *OutputVector)
-  This function performs the inverse Park transform to rotate a quadrature 2-phase vector from the standard reference frame.
+  This function performs the inverse Park transform to rotate a quadrature 2-phase vector to a stationary reference frame.
 
   ### Inputs:
   - `InputVector` is the pointer to the first element of the 2-element double vector to be transformed.
