@@ -11,11 +11,12 @@ I developed this as part of a field-oriented control BLDC motor project.
 <details>
   <summary>Functions</summary>
 
-  ## vector_normalize(double *Vector, int n)
+  ## int vector_normalize(double *Vector, int n)
   This function normalizes an input vector to have a magnitude of 1.
 
   ### Inputs:
   - `Vector` is the pointer to the first element of the vector (type double) to be normalized.  When the function is complete, the same vector will contain the normalized values.
+  - `n` is the size of the vector.
   
   ### Returns:
   - `0`
