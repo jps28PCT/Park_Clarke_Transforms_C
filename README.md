@@ -32,7 +32,7 @@ I developed this as part of a field-oriented control BLDC motor project.
   - `0`
 
 
-  ## inv_clarke_trsfm(double *InputVector, double *OutputVector)
+  ## int inv_clarke_trsfm(double *InputVector, double *OutputVector)
   This function performs the inverse Clarke transform to transform a two-phase quadrature vector to a three-phase vector.
 
   ### Inputs:
@@ -55,7 +55,7 @@ I developed this as part of a field-oriented control BLDC motor project.
   - `0`
 
 
-  ## inv_park_trsfm(double *InputVector, double theta, double *OutputVector)
+  ## int inv_park_trsfm(double *InputVector, double theta, double *OutputVector)
   This function performs the inverse Park transform to rotate a quadrature 2-phase vector from the standard reference frame.
 
   ### Inputs:
