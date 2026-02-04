@@ -3,8 +3,8 @@
 C implementation of the Park and Clark transforms, as well as their inverses.</br>  
 Requires `<math.h>` for `sin()` and `cos()`.</br> 
 </br> 
-The Park transform converts three-phase vectors in the time domain to a stationary two-phase vector.</br>
-The Clarke transform rotates the two-phase stationary vector into a rotating reference frame.</br>
+The Clarke transform converts three-phase vectors in the time domain to a stationary two-phase vector.</br>
+The Park transform rotates the two-phase stationary vector into a rotating reference frame.</br>
 </br>
 I developed this as part of a field-oriented control BLDC motor project.  
 
