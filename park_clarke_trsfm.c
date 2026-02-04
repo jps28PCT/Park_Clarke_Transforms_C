@@ -115,7 +115,7 @@ int inv_clarke_trsfm(double *InputVector, double *OutputVector){
  *
  * @param	InputVector is the pointer to the first element of the 2-element
  *          double vector to be transformed.
-* @param	theta is the type-double angle to rotate the vector.
+* @param	theta is the type-double angle to rotate the vector in rad.
  * @param	OutputVector is the pointer to the first element of the 2-element
  *          double vector that contains the quadrature result of the vector.
  * 
@@ -139,7 +139,7 @@ int park_trsfm(double *InputVector, double theta, double *OutputVector){
  *
  * @param	InputVector is the pointer to the first element of the 2-element
  *          double vector to be transformed.
- * @param	theta is the type-double angle to rotate the vector.
+ * @param	theta is the type-double angle to rotate the vector in rad.
  * @param	OutputVector is the pointer to the first element of the 2-element
  *          double vector that contains the quadrature result of the vector.
  * 
