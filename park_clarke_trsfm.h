@@ -74,7 +74,7 @@ int inv_clarke_trsfm(double *InputVector, double *OutputVector);
 
 /*****************************************************************************
  * This function performs the Park transform to rotate a quadrature 2-phase
- * vector.
+ * vector into the standard reference frame.
  *
  * @param	InputVector is the pointer to the first element of the 2-element
  *          double vector to be transformed.
@@ -90,7 +90,7 @@ int park_trsfm(double *InputVector, double theta, double *OutputVector);
 
 /*****************************************************************************
  * This function performs the inverse Park transform to rotate a quadrature 
- * 2-phase vector.
+ * 2-phase vector from the standard reference frame.
  *
  * @param	InputVector is the pointer to the first element of the 2-element
  *          double vector to be transformed.
