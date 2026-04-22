@@ -25,6 +25,12 @@ I developed this as part of a field-oriented control BLDC motor project.
   ## int clarke_trsfm(double *InputVector, double *OutputVector)
   This function performs the Clarke transform to transform a three-phase vector to a two-phase quadrature vector.
 
+  Clarke Transform:
+  ```math
+  \left[\begin{matrix}\alpha\\\beta\end{matrix}\right]=\frac{2}{3}\left[\begin{matrix}1&\tfrac{-1}{2}&\tfrac{-1}{2}\\0&\tfrac{\sqrt3}{2}&\tfrac{-\sqrt3}{2}\end{matrix}\right]\left[\begin{matrix}u\\v\\w\end{matrix}\right]
+ ```
+
+
   ### Inputs:
   - `InputVector` is the pointer to the first element of the 3-element double vector to be transformed.
   - `OutputVector` is the pointer to the first element of the 2-element double vector that contains the quadrature result of the vector.
