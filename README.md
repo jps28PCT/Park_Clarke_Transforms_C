@@ -42,6 +42,11 @@ I developed this as part of a field-oriented control BLDC motor project.
   ## int inv_clarke_trsfm(double *InputVector, double *OutputVector)
   This function performs the inverse Clarke transform to transform a two-phase quadrature vector to a three-phase vector.
 
+  Inverse Clarke Transform:
+  ```math
+  \left[\begin{matrix}u\\v\\w\end{matrix}\right]=\frac{2}{3}\left[\begin{matrix}1&0\\\tfrac{-1}{2}&\tfrac{\sqrt3}{2}\\\tfrac{-1}{2}&\tfrac{-\sqrt3}{2}\end{matrix}\right]\left[\begin{matrix}\alpha\\\beta\end{matrix}\right]
+  ```
+
   ### Inputs:
   - `InputVector` is the pointer to the first element of the 2-element double vector to be transformed.
   - `OutputVector` is the pointer to the first element of the 3-element  double vector that contains the three-phase result.
@@ -52,6 +57,11 @@ I developed this as part of a field-oriented control BLDC motor project.
 
   ## int park_trsfm(double *InputVector, double theta, double *OutputVector)
   This function performs the Park transform to rotate a quadrature 2-phase stationary vector to a rotated reference frame.
+
+  Park Transform:
+  ```math
+  \left[\begin{matrix}d\\q\end{matrix}\right]=\left[\begin{matrix}\cos{\theta}&\sin{\theta}\\-\sin{\theta}&\cos{\theta}\end{matrix}\right]\left[\begin{matrix}\alpha\\\beta\end{matrix}\right]
+  ```
 
   ### Inputs:
   - `InputVector` is the pointer to the first element of the 2-element double vector to be transformed.
@@ -64,6 +74,11 @@ I developed this as part of a field-oriented control BLDC motor project.
 
   ## int inv_park_trsfm(double *InputVector, double theta, double *OutputVector)
   This function performs the inverse Park transform to rotate a quadrature 2-phase vector to a stationary reference frame.
+
+  Inverse Park Transform:
+  ```math
+  \left[\begin{matrix}\alpha\\\beta\end{matrix}\right]=\left[\begin{matrix}\cos{\theta}&-\sin{\theta}\\\sin{\theta}&\cos{\theta}\end{matrix}\right]\left[\begin{matrix}d\\q\end{matrix}\right]
+  ```
 
   ### Inputs:
   - `InputVector` is the pointer to the first element of the 2-element double vector to be transformed.
